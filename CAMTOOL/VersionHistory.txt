@@ -1,0 +1,43 @@
+
+Version:1.7.7 2016/03/10 Jifu
+1> Fixed issue that failed to open serial port  which file description's length is 50B.
+2> Make baudrate settings to take effect.
+
+Version:1.7.6 2016/03/8 Evan
+1> Modified script [file]:pair.command [content]:/usr/local/wabisabi/kintsugi/fixtures/CAM/bin/racklistener -f $LOCATION_ID
+2> Modified script [file]:pre_uut_loop.command [content]:/usr/local/wabisabi/kintsugi/fixtures/CAM/bin/racklistener -f 0
+
+Version:1.7.5 2016/03/07 Jifu
+1> Overwrited script pre_uut_loop.command.
+2> Call script pair.command after paired Slot-Carrier-CAMAddress.
+3> Do initial command sets in pre_uut.command when finished paring.
+4> Fixed Tester cycle time issue.
+5> Show CAMBoard IP Address in Tester's slot view. and check the network connection before every pairing.
+'
+Version:1.7.4 2016/03/05 Jifu
+1> Implemented Mojo Page.
+2> Added Serial port manual debug function.
+3> Added loopbacks testing for Mojo.
+
+Version:1.7.3  2016/02/19 Jifu
+1> Changed slot number to 12.
+2> Updated slot settings and the related routine.
+3> Added information (FPY /system date) on NandRackView. using command <FPY to reset FPY.
+
+Version:1.7.2  2016/02/18 Jifu
+1> Add simulator support for tester/pair/unpair in debug mode.
+2> Fixed some FPY/UPH bugs.
+3> Optimize the FPY/UPH views.
+4> Add Tab<UUT> in the Report page.
+5> Hidden ExitFullScreen Button. use scan command <SCREEN to exit full screen.
+6> Store/restore slot's start_time_stamp when app be exited or opened.
+
+Version:1.0 started from 2015/11 ,created by Jifu.
+CAMTOOL included the following functions
+1> Flash CAM Board
+2> Local boot UUT
+3> Pair/unpair for carrier,uut,cam
+4> Tester monitor
+5> FPY/UPH test report
+6> User management
+7> Slot configuration or settings

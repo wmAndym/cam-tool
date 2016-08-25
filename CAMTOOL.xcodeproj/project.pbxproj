@@ -1,0 +1,1133 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		160CC7F01C7C3ED200FE5F95 /* SFMojoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 160CC7EE1C7C3ED200FE5F95 /* SFMojoViewController.m */; };
+		160CC7F11C7C3ED200FE5F95 /* SFMojoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 160CC7EF1C7C3ED200FE5F95 /* SFMojoViewController.xib */; };
+		161ADF331C4233FD00CAC3AA /* SFStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 161ADF321C4233FD00CAC3AA /* SFStatusView.m */; };
+		161ADF371C42420D00CAC3AA /* SFChangePasswordWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 161ADF351C42420D00CAC3AA /* SFChangePasswordWindowController.m */; };
+		161ADF381C42420D00CAC3AA /* SFChangePasswordWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 161ADF361C42420D00CAC3AA /* SFChangePasswordWindowController.xib */; };
+		161ADF3A1C424C1200CAC3AA /* Accounts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 161ADF391C424C1200CAC3AA /* Accounts.plist */; };
+		161ADF3F1C42548100CAC3AA /* SFPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 161ADF3D1C42548100CAC3AA /* SFPreferencesWindowController.m */; };
+		161ADF401C42548100CAC3AA /* SFPreferencesWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 161ADF3E1C42548100CAC3AA /* SFPreferencesWindowController.xib */; };
+		16251E5E1C0779EF00F54F54 /* ping_all.command in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16251E5D1C0779E100F54F54 /* ping_all.command */; };
+		16251E601C077B0900F54F54 /* probe.gif in Resources */ = {isa = PBXBuildFile; fileRef = 16251E5F1C077B0900F54F54 /* probe.gif */; };
+		1627CC5A1C3F9FEE00BD9CD4 /* SFWhiteMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1627CC591C3F9FEE00BD9CD4 /* SFWhiteMaskView.m */; };
+		16388F041C33AE970073846B /* icon_tester.ico in Resources */ = {isa = PBXBuildFile; fileRef = 16388F031C33AE970073846B /* icon_tester.ico */; };
+		16388F061C33AE9F0073846B /* icon_pair.ico in Resources */ = {isa = PBXBuildFile; fileRef = 16388F051C33AE9F0073846B /* icon_pair.ico */; };
+		16388F0B1C33B0B80073846B /* SFPairViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16388F091C33B0B80073846B /* SFPairViewController.m */; };
+		16388F0C1C33B0B80073846B /* SFPairViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16388F0A1C33B0B80073846B /* SFPairViewController.xib */; };
+		163959891BFF748D002423DD /* SFFixtueSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 163959871BFF748D002423DD /* SFFixtueSettingViewController.m */; };
+		1639598A1BFF748D002423DD /* SFFixtueSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 163959881BFF748D002423DD /* SFFixtueSettingViewController.xib */; };
+		163959971C001BD5002423DD /* tcpconnect.c in Sources */ = {isa = PBXBuildFile; fileRef = 163959951C001BD5002423DD /* tcpconnect.c */; };
+		1639599C1C001BE5002423DD /* rs232_posix.c in Sources */ = {isa = PBXBuildFile; fileRef = 163959981C001BE5002423DD /* rs232_posix.c */; };
+		1639599D1C001BE5002423DD /* rs232.c in Sources */ = {isa = PBXBuildFile; fileRef = 1639599A1C001BE5002423DD /* rs232.c */; };
+		163975EB1BF48510005EC82B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 163975EA1BF48510005EC82B /* Cocoa.framework */; };
+		163975F51BF48510005EC82B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 163975F31BF48510005EC82B /* InfoPlist.strings */; };
+		163975F71BF48510005EC82B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 163975F61BF48510005EC82B /* main.m */; };
+		163975FB1BF48510005EC82B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 163975F91BF48510005EC82B /* Credits.rtf */; };
+		163975FE1BF48510005EC82B /* SFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 163975FD1BF48510005EC82B /* SFAppDelegate.m */; };
+		163976031BF48510005EC82B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 163976021BF48510005EC82B /* Images.xcassets */; };
+		163976291BF4881D005EC82B /* SFFlashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 163976271BF4881D005EC82B /* SFFlashViewController.m */; };
+		1639762A1BF4881D005EC82B /* SFFlashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 163976281BF4881D005EC82B /* SFFlashViewController.xib */; };
+		1639762D1BF49ACD005EC82B /* codec_debug in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1639762C1BF49AC9005EC82B /* codec_debug */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		163976321BF585D0005EC82B /* SFCAMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 163976301BF585D0005EC82B /* SFCAMViewController.m */; };
+		163976331BF585D0005EC82B /* SFCAMViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 163976311BF585D0005EC82B /* SFCAMViewController.xib */; };
+		163976371BF5AFFE005EC82B /* cam_probe.pl in CopyFiles */ = {isa = PBXBuildFile; fileRef = 163976351BF5AFE0005EC82B /* cam_probe.pl */; };
+		163976391BF5B935005EC82B /* navigation.plist in Resources */ = {isa = PBXBuildFile; fileRef = 163976381BF5B935005EC82B /* navigation.plist */; };
+		1639763D1BF5BA47005EC82B /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1639763C1BF5BA47005EC82B /* NavigationController.m */; };
+		163976401BF5BB35005EC82B /* SFMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1639763F1BF5BB35005EC82B /* SFMainView.m */; };
+		163976431BF5BC2B005EC82B /* NavigationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 163976421BF5BC2B005EC82B /* NavigationItem.m */; };
+		163976451BF5BD7E005EC82B /* UnderContructionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 163976441BF5BD7E005EC82B /* UnderContructionView.xib */; };
+		1639765C1BF5BDD7005EC82B /* button_cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 163976471BF5BDD7005EC82B /* button_cross.png */; };
+		1639765D1BF5BDD7005EC82B /* button_start.png in Resources */ = {isa = PBXBuildFile; fileRef = 163976481BF5BDD7005EC82B /* button_start.png */; };
+		1639765E1BF5BDD7005EC82B /* button_stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 163976491BF5BDD7005EC82B /* button_stop.png */; };
+		1639765F1BF5BDD7005EC82B /* connected.png in Resources */ = {isa = PBXBuildFile; fileRef = 1639764A1BF5BDD7005EC82B /* connected.png */; };
+		163976601BF5BDD7005EC82B /* disconnected.png in Resources */ = {isa = PBXBuildFile; fileRef = 1639764B1BF5BDD7005EC82B /* disconnected.png */; };
+		163976611BF5BDD7005EC82B /* icon_cell.ico in Resources */ = {isa = PBXBuildFile; fileRef = 1639764C1BF5BDD7005EC82B /* icon_cell.ico */; };
+		163976621BF5BDD7005EC82B /* icon_device.ico in Resources */ = {isa = PBXBuildFile; fileRef = 1639764D1BF5BDD7005EC82B /* icon_device.ico */; };
+		163976631BF5BDD7005EC82B /* icon_log.ico in Resources */ = {isa = PBXBuildFile; fileRef = 1639764E1BF5BDD7005EC82B /* icon_log.ico */; };
+		163976641BF5BDD7005EC82B /* icon_login.png in Resources */ = {isa = PBXBuildFile; fileRef = 1639764F1BF5BDD7005EC82B /* icon_login.png */; };
+		163976651BF5BDD7005EC82B /* icon_logout.png in Resources */ = {isa = PBXBuildFile; fileRef = 163976501BF5BDD7005EC82B /* icon_logout.png */; };
+		163976661BF5BDD7005EC82B /* icon_settings.ico in Resources */ = {isa = PBXBuildFile; fileRef = 163976511BF5BDD7005EC82B /* icon_settings.ico */; };
+		163976671BF5BDD7005EC82B /* icon_yield.ico in Resources */ = {isa = PBXBuildFile; fileRef = 163976521BF5BDD7005EC82B /* icon_yield.ico */; };
+		163976681BF5BDD7005EC82B /* ledgray.png in Resources */ = {isa = PBXBuildFile; fileRef = 163976531BF5BDD7005EC82B /* ledgray.png */; };
+		163976691BF5BDD7005EC82B /* ledgreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 163976541BF5BDD7005EC82B /* ledgreen.png */; };
+		1639766A1BF5BDD7005EC82B /* ledorange.png in Resources */ = {isa = PBXBuildFile; fileRef = 163976551BF5BDD7005EC82B /* ledorange.png */; };
+		1639766B1BF5BDD7005EC82B /* ledred.png in Resources */ = {isa = PBXBuildFile; fileRef = 163976561BF5BDD7005EC82B /* ledred.png */; };
+		1639766C1BF5BDD7005EC82B /* ng.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 163976571BF5BDD7005EC82B /* ng.tiff */; };
+		1639766D1BF5BDD7005EC82B /* ok.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 163976581BF5BDD7005EC82B /* ok.tiff */; };
+		1639766E1BF5BDD7005EC82B /* star-off.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 163976591BF5BDD7005EC82B /* star-off.tiff */; };
+		1639766F1BF5BDD7005EC82B /* star-on.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 1639765A1BF5BDD7005EC82B /* star-on.tiff */; };
+		163976701BF5BDD7005EC82B /* under_construction.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1639765B1BF5BDD7005EC82B /* under_construction.gif */; };
+		163976B31BF5DB51005EC82B /* SFCAMPortItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 163976B21BF5DB51005EC82B /* SFCAMPortItem.m */; };
+		164899311C54B2DD00D9F0BA /* SFDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1648992F1C54B2DD00D9F0BA /* SFDataModel.xcdatamodeld */; };
+		1648993B1C54B6AC00D9F0BA /* SFDataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1648993A1C54B6AC00D9F0BA /* SFDataCenter.m */; };
+		1649EA7D1C3F562300DB7B7D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 163975FF1BF48510005EC82B /* MainMenu.xib */; };
+		164B250E1C057C570034BC82 /* SFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 164B250D1C057C570034BC82 /* SFViewController.m */; };
+		16505DF91C40D97200F89FA6 /* SFAccessDeniedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16505DF81C40D97200F89FA6 /* SFAccessDeniedView.m */; };
+		165723C71C17189800052F6A /* SFTestSeqViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 165723C51C17189800052F6A /* SFTestSeqViewController.m */; };
+		165723C81C17189800052F6A /* SFTestSeqViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 165723C61C17189800052F6A /* SFTestSeqViewController.xib */; };
+		165723CB1C17276E00052F6A /* MainSeq.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = 165723C91C1721C400052F6A /* MainSeq.py */; };
+		168945431BF96C25003B9851 /* SFCAMBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 168945421BF96C25003B9851 /* SFCAMBoard.m */; };
+		168945461BF99A1A003B9851 /* SFImageValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 168945451BF99A1A003B9851 /* SFImageValueTransformer.m */; };
+		1689454A1BF9A6F3003B9851 /* SFCommonFounction.m in Sources */ = {isa = PBXBuildFile; fileRef = 168945491BF9A6F3003B9851 /* SFCommonFounction.m */; };
+		1689454C1BF9E00D003B9851 /* CAMPreferences.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1689454B1BF9E00D003B9851 /* CAMPreferences.plist */; };
+		168B40D31C4F8580005BFFF3 /* SFRecordWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 168B40D21C4F8580005BFFF3 /* SFRecordWriter.m */; };
+		169885F31C489676003C59F3 /* SFUserManagement.m in Sources */ = {isa = PBXBuildFile; fileRef = 169885F11C489676003C59F3 /* SFUserManagement.m */; };
+		169885F41C489676003C59F3 /* SFUserManagement.xib in Resources */ = {isa = PBXBuildFile; fileRef = 169885F21C489676003C59F3 /* SFUserManagement.xib */; };
+		169886021C4A2B22003C59F3 /* SFLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 169886001C4A2B22003C59F3 /* SFLogViewController.m */; };
+		169886031C4A2B22003C59F3 /* SFLogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 169886011C4A2B22003C59F3 /* SFLogViewController.xib */; };
+		1698860D1C4A306D003C59F3 /* post_uut_loop.command in CopyFiles */ = {isa = PBXBuildFile; fileRef = 169886041C4A2FEE003C59F3 /* post_uut_loop.command */; };
+		1698860E1C4A306D003C59F3 /* post_uut.command in CopyFiles */ = {isa = PBXBuildFile; fileRef = 169886051C4A2FEE003C59F3 /* post_uut.command */; };
+		1698860F1C4A306D003C59F3 /* pre_uut_loop.command in CopyFiles */ = {isa = PBXBuildFile; fileRef = 169886061C4A2FEE003C59F3 /* pre_uut_loop.command */; };
+		169886101C4A306D003C59F3 /* pre_uut.command in CopyFiles */ = {isa = PBXBuildFile; fileRef = 169886071C4A2FEE003C59F3 /* pre_uut.command */; };
+		16A393F61C8DDD6F00298EE0 /* pair.command in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16A393F21C8DDD2D00298EE0 /* pair.command */; };
+		16A393F71C8DDD6F00298EE0 /* unpair.command in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16A393F41C8DDD3B00298EE0 /* unpair.command */; };
+		16A94EA21C565E0800E65D6B /* SFReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A94EA01C565E0800E65D6B /* SFReportViewController.m */; };
+		16A94EA31C565E0800E65D6B /* SFReportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16A94EA11C565E0800E65D6B /* SFReportViewController.xib */; };
+		16A94EAB1C565EF100E65D6B /* SFUPHView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A94EA81C565EF100E65D6B /* SFUPHView.m */; };
+		16A94EAC1C565EF100E65D6B /* SFYieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A94EAA1C565EF100E65D6B /* SFYieldView.m */; };
+		16A94EAF1C565F2400E65D6B /* SFBasePlotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A94EAE1C565F2400E65D6B /* SFBasePlotView.m */; };
+		16A94EB11C5662A600E65D6B /* flash_ic.ico in Resources */ = {isa = PBXBuildFile; fileRef = 16A94EB01C5662A600E65D6B /* flash_ic.ico */; };
+		16B0BDC51C41671B00B8908D /* SFAuthWinowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B0BDC31C41671B00B8908D /* SFAuthWinowController.m */; };
+		16B0BDC61C41671B00B8908D /* SFAuthWinowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16B0BDC41C41671B00B8908D /* SFAuthWinowController.xib */; };
+		16B0BDC91C41690800B8908D /* SFAuthenticator.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B0BDC81C41690800B8908D /* SFAuthenticator.m */; };
+		16BC83B51C75A7E400E68148 /* mojo.png in Resources */ = {isa = PBXBuildFile; fileRef = 16BC83B41C75A7E400E68148 /* mojo.png */; };
+		16C58A8F1C4F7156006434D6 /* SFStatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C58A8D1C4F7156006434D6 /* SFStatusViewController.m */; };
+		16C58A901C4F7156006434D6 /* SFStatusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16C58A8E1C4F7156006434D6 /* SFStatusViewController.xib */; };
+		16D9DE8E1C2840A500CD2665 /* SFNANDRackMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D9DE8D1C2840A500CD2665 /* SFNANDRackMainView.m */; };
+		16D9DE901C29574D00CD2665 /* QREncoder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16D9DE8F1C29574D00CD2665 /* QREncoder.framework */; };
+		16D9DE911C29577800CD2665 /* QREncoder.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16D9DE8F1C29574D00CD2665 /* QREncoder.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		16D9DE991C2A2F1500CD2665 /* SFSlotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D9DE981C2A2F1500CD2665 /* SFSlotView.m */; };
+		16D9DE9C1C2A403600CD2665 /* SFFixtureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D9DE9B1C2A403600CD2665 /* SFFixtureView.m */; };
+		16DB317C1C0C81BF008DB1E2 /* Python in Frameworks */ = {isa = PBXBuildFile; fileRef = 16DB31781C0C7D88008DB1E2 /* Python */; };
+		16EC8B2D1C911AFA00BFF205 /* VersionHistory.txt in Resources */ = {isa = PBXBuildFile; fileRef = 16A393F01C8BECD100298EE0 /* VersionHistory.txt */; };
+		16FA84551C020701006C275D /* run_nanokdp.command in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16FA84521C0206EE006C275D /* run_nanokdp.command */; };
+		16FA84581C035266006C275D /* seq_by_csv_plist.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16FA84561C035198006C275D /* seq_by_csv_plist.py */; };
+		16FA845A1C035337006C275D /* CAMSequnce.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16FA84591C035337006C275D /* CAMSequnce.plist */; };
+		1F77D2A91BFF254500D57F9A /* SFLocalBootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F77D2A71BFF254500D57F9A /* SFLocalBootViewController.m */; };
+		1F77D2AA1BFF254500D57F9A /* SFLocalBootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F77D2A81BFF254500D57F9A /* SFLocalBootViewController.xib */; };
+		1F77D2AC1BFF44DA00D57F9A /* read_adc.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1F77D2AB1BFF44B700D57F9A /* read_adc.py */; };
+		1F77D2AF1BFF479F00D57F9A /* SFCAMInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F77D2AE1BFF479F00D57F9A /* SFCAMInfo.m */; };
+		1FE84F951C0079B100FB237A /* nanokdp in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1FE84F931C00798200FB237A /* nanokdp */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		1FE84F981C008C8B00FB237A /* mac2ip.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1FE84F961C008C7C00FB237A /* mac2ip.py */; };
+		1FFC59EE1C5F83370079CB6C /* SFUserLoginVerificationWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFC59EC1C5F83370079CB6C /* SFUserLoginVerificationWindowController.m */; };
+		1FFC59EF1C5F83370079CB6C /* SFUserLoginVerificationWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FFC59ED1C5F83370079CB6C /* SFUserLoginVerificationWindowController.xib */; };
+		740ECA151C58674100F1B9F2 /* YieldReport.m in Sources */ = {isa = PBXBuildFile; fileRef = 740ECA141C58674100F1B9F2 /* YieldReport.m */; };
+		740ECA181C58674200F1B9F2 /* SystemLogs.m in Sources */ = {isa = PBXBuildFile; fileRef = 740ECA171C58674200F1B9F2 /* SystemLogs.m */; };
+		74FB43431C5A35A8006C1020 /* SFSlotCommunication.m in Sources */ = {isa = PBXBuildFile; fileRef = 74FB43421C5A35A8006C1020 /* SFSlotCommunication.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1639598D1BFF9DA1002423DD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				16D9DE911C29577800CD2665 /* QREncoder.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1639762B1BF49A64005EC82B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = tools;
+			dstSubfolderSpec = 7;
+			files = (
+				165723CB1C17276E00052F6A /* MainSeq.py in CopyFiles */,
+				16FA84581C035266006C275D /* seq_by_csv_plist.py in CopyFiles */,
+				1FE84F981C008C8B00FB237A /* mac2ip.py in CopyFiles */,
+				1F77D2AC1BFF44DA00D57F9A /* read_adc.py in CopyFiles */,
+				1FE84F951C0079B100FB237A /* nanokdp in CopyFiles */,
+				16251E5E1C0779EF00F54F54 /* ping_all.command in CopyFiles */,
+				163976371BF5AFFE005EC82B /* cam_probe.pl in CopyFiles */,
+				16FA84551C020701006C275D /* run_nanokdp.command in CopyFiles */,
+				1639762D1BF49ACD005EC82B /* codec_debug in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1698860C1C4A3047003C59F3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = actionscripts;
+			dstSubfolderSpec = 7;
+			files = (
+				16A393F61C8DDD6F00298EE0 /* pair.command in CopyFiles */,
+				16A393F71C8DDD6F00298EE0 /* unpair.command in CopyFiles */,
+				1698860D1C4A306D003C59F3 /* post_uut_loop.command in CopyFiles */,
+				1698860E1C4A306D003C59F3 /* post_uut.command in CopyFiles */,
+				1698860F1C4A306D003C59F3 /* pre_uut_loop.command in CopyFiles */,
+				169886101C4A306D003C59F3 /* pre_uut.command in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		160CC7ED1C7C3ED200FE5F95 /* SFMojoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFMojoViewController.h; sourceTree = "<group>"; };
+		160CC7EE1C7C3ED200FE5F95 /* SFMojoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFMojoViewController.m; sourceTree = "<group>"; };
+		160CC7EF1C7C3ED200FE5F95 /* SFMojoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFMojoViewController.xib; sourceTree = "<group>"; };
+		161ADF311C4233FD00CAC3AA /* SFStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFStatusView.h; sourceTree = "<group>"; };
+		161ADF321C4233FD00CAC3AA /* SFStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFStatusView.m; sourceTree = "<group>"; };
+		161ADF341C42420D00CAC3AA /* SFChangePasswordWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFChangePasswordWindowController.h; sourceTree = "<group>"; };
+		161ADF351C42420D00CAC3AA /* SFChangePasswordWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFChangePasswordWindowController.m; sourceTree = "<group>"; };
+		161ADF361C42420D00CAC3AA /* SFChangePasswordWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFChangePasswordWindowController.xib; sourceTree = "<group>"; };
+		161ADF391C424C1200CAC3AA /* Accounts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Accounts.plist; sourceTree = "<group>"; };
+		161ADF3C1C42548100CAC3AA /* SFPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFPreferencesWindowController.h; sourceTree = "<group>"; };
+		161ADF3D1C42548100CAC3AA /* SFPreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFPreferencesWindowController.m; sourceTree = "<group>"; };
+		161ADF3E1C42548100CAC3AA /* SFPreferencesWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFPreferencesWindowController.xib; sourceTree = "<group>"; };
+		16251E5D1C0779E100F54F54 /* ping_all.command */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = ping_all.command; path = scripts/ping_all.command; sourceTree = SOURCE_ROOT; };
+		16251E5F1C077B0900F54F54 /* probe.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = probe.gif; sourceTree = "<group>"; };
+		1627CC581C3F9FEE00BD9CD4 /* SFWhiteMaskView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFWhiteMaskView.h; sourceTree = "<group>"; };
+		1627CC591C3F9FEE00BD9CD4 /* SFWhiteMaskView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFWhiteMaskView.m; sourceTree = "<group>"; };
+		16388F031C33AE970073846B /* icon_tester.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = icon_tester.ico; sourceTree = "<group>"; };
+		16388F051C33AE9F0073846B /* icon_pair.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = icon_pair.ico; sourceTree = "<group>"; };
+		16388F081C33B0B80073846B /* SFPairViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFPairViewController.h; sourceTree = "<group>"; };
+		16388F091C33B0B80073846B /* SFPairViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFPairViewController.m; sourceTree = "<group>"; };
+		16388F0A1C33B0B80073846B /* SFPairViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFPairViewController.xib; sourceTree = "<group>"; };
+		163959861BFF748D002423DD /* SFFixtueSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFFixtueSettingViewController.h; sourceTree = "<group>"; };
+		163959871BFF748D002423DD /* SFFixtueSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFFixtueSettingViewController.m; sourceTree = "<group>"; };
+		163959881BFF748D002423DD /* SFFixtueSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFFixtueSettingViewController.xib; sourceTree = "<group>"; };
+		163959951C001BD5002423DD /* tcpconnect.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tcpconnect.c; sourceTree = "<group>"; };
+		163959961C001BD5002423DD /* tcpconnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tcpconnect.h; sourceTree = "<group>"; };
+		163959981C001BE5002423DD /* rs232_posix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rs232_posix.c; sourceTree = "<group>"; };
+		163959991C001BE5002423DD /* rs232_posix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rs232_posix.h; sourceTree = "<group>"; };
+		1639599A1C001BE5002423DD /* rs232.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rs232.c; sourceTree = "<group>"; };
+		1639599B1C001BE5002423DD /* rs232.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rs232.h; sourceTree = "<group>"; };
+		163975E71BF48510005EC82B /* CAMTOOL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CAMTOOL.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		163975EA1BF48510005EC82B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		163975ED1BF48510005EC82B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		163975EE1BF48510005EC82B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		163975EF1BF48510005EC82B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		163975F21BF48510005EC82B /* CAMTOOL-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CAMTOOL-Info.plist"; sourceTree = "<group>"; };
+		163975F41BF48510005EC82B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		163975F61BF48510005EC82B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		163975F81BF48510005EC82B /* CAMTOOL-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CAMTOOL-Prefix.pch"; sourceTree = "<group>"; };
+		163975FA1BF48510005EC82B /* en */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; name = en; path = en.lproj/Credits.rtfd; sourceTree = "<group>"; };
+		163975FC1BF48510005EC82B /* SFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFAppDelegate.h; sourceTree = "<group>"; };
+		163975FD1BF48510005EC82B /* SFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFAppDelegate.m; sourceTree = "<group>"; };
+		163976001BF48510005EC82B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		163976021BF48510005EC82B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		163976091BF48510005EC82B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		163976101BF48510005EC82B /* CAMTOOLTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CAMTOOLTests-Info.plist"; sourceTree = "<group>"; };
+		163976121BF48510005EC82B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		163976141BF48510005EC82B /* CAMTOOLTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAMTOOLTests.m; sourceTree = "<group>"; };
+		163976261BF4881D005EC82B /* SFFlashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFFlashViewController.h; sourceTree = "<group>"; };
+		163976271BF4881D005EC82B /* SFFlashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFFlashViewController.m; sourceTree = "<group>"; };
+		163976281BF4881D005EC82B /* SFFlashViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFFlashViewController.xib; sourceTree = "<group>"; };
+		1639762C1BF49AC9005EC82B /* codec_debug */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = codec_debug; sourceTree = "<group>"; };
+		1639762F1BF585D0005EC82B /* SFCAMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCAMViewController.h; sourceTree = "<group>"; };
+		163976301BF585D0005EC82B /* SFCAMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCAMViewController.m; sourceTree = "<group>"; };
+		163976311BF585D0005EC82B /* SFCAMViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFCAMViewController.xib; sourceTree = "<group>"; };
+		163976351BF5AFE0005EC82B /* cam_probe.pl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; path = cam_probe.pl; sourceTree = "<group>"; };
+		163976381BF5B935005EC82B /* navigation.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = navigation.plist; sourceTree = "<group>"; };
+		1639763B1BF5BA47005EC82B /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
+		1639763C1BF5BA47005EC82B /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
+		1639763E1BF5BB35005EC82B /* SFMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFMainView.h; sourceTree = "<group>"; };
+		1639763F1BF5BB35005EC82B /* SFMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFMainView.m; sourceTree = "<group>"; };
+		163976411BF5BC2B005EC82B /* NavigationItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationItem.h; sourceTree = "<group>"; };
+		163976421BF5BC2B005EC82B /* NavigationItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationItem.m; sourceTree = "<group>"; };
+		163976441BF5BD7E005EC82B /* UnderContructionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UnderContructionView.xib; sourceTree = "<group>"; };
+		163976471BF5BDD7005EC82B /* button_cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_cross.png; sourceTree = "<group>"; };
+		163976481BF5BDD7005EC82B /* button_start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_start.png; sourceTree = "<group>"; };
+		163976491BF5BDD7005EC82B /* button_stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_stop.png; sourceTree = "<group>"; };
+		1639764A1BF5BDD7005EC82B /* connected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = connected.png; sourceTree = "<group>"; };
+		1639764B1BF5BDD7005EC82B /* disconnected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disconnected.png; sourceTree = "<group>"; };
+		1639764C1BF5BDD7005EC82B /* icon_cell.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = icon_cell.ico; sourceTree = "<group>"; };
+		1639764D1BF5BDD7005EC82B /* icon_device.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = icon_device.ico; sourceTree = "<group>"; };
+		1639764E1BF5BDD7005EC82B /* icon_log.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = icon_log.ico; sourceTree = "<group>"; };
+		1639764F1BF5BDD7005EC82B /* icon_login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_login.png; sourceTree = "<group>"; };
+		163976501BF5BDD7005EC82B /* icon_logout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_logout.png; sourceTree = "<group>"; };
+		163976511BF5BDD7005EC82B /* icon_settings.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = icon_settings.ico; sourceTree = "<group>"; };
+		163976521BF5BDD7005EC82B /* icon_yield.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = icon_yield.ico; sourceTree = "<group>"; };
+		163976531BF5BDD7005EC82B /* ledgray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ledgray.png; sourceTree = "<group>"; };
+		163976541BF5BDD7005EC82B /* ledgreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ledgreen.png; sourceTree = "<group>"; };
+		163976551BF5BDD7005EC82B /* ledorange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ledorange.png; sourceTree = "<group>"; };
+		163976561BF5BDD7005EC82B /* ledred.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ledred.png; sourceTree = "<group>"; };
+		163976571BF5BDD7005EC82B /* ng.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ng.tiff; sourceTree = "<group>"; };
+		163976581BF5BDD7005EC82B /* ok.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ok.tiff; sourceTree = "<group>"; };
+		163976591BF5BDD7005EC82B /* star-off.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "star-off.tiff"; sourceTree = "<group>"; };
+		1639765A1BF5BDD7005EC82B /* star-on.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "star-on.tiff"; sourceTree = "<group>"; };
+		1639765B1BF5BDD7005EC82B /* under_construction.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = under_construction.gif; sourceTree = "<group>"; };
+		163976B11BF5DB51005EC82B /* SFCAMPortItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCAMPortItem.h; sourceTree = "<group>"; };
+		163976B21BF5DB51005EC82B /* SFCAMPortItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCAMPortItem.m; sourceTree = "<group>"; };
+		164899301C54B2DD00D9F0BA /* SFDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SFDataModel.xcdatamodel; sourceTree = "<group>"; };
+		164899391C54B6AC00D9F0BA /* SFDataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFDataCenter.h; sourceTree = "<group>"; };
+		1648993A1C54B6AC00D9F0BA /* SFDataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFDataCenter.m; sourceTree = "<group>"; };
+		164B250C1C057C570034BC82 /* SFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFViewController.h; sourceTree = "<group>"; };
+		164B250D1C057C570034BC82 /* SFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFViewController.m; sourceTree = "<group>"; };
+		16505DF71C40D97200F89FA6 /* SFAccessDeniedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFAccessDeniedView.h; sourceTree = "<group>"; };
+		16505DF81C40D97200F89FA6 /* SFAccessDeniedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFAccessDeniedView.m; sourceTree = "<group>"; };
+		165723C41C17189800052F6A /* SFTestSeqViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFTestSeqViewController.h; sourceTree = "<group>"; };
+		165723C51C17189800052F6A /* SFTestSeqViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFTestSeqViewController.m; sourceTree = "<group>"; };
+		165723C61C17189800052F6A /* SFTestSeqViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFTestSeqViewController.xib; sourceTree = "<group>"; };
+		165723C91C1721C400052F6A /* MainSeq.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; name = MainSeq.py; path = scripts/MainSeq.py; sourceTree = SOURCE_ROOT; };
+		168945411BF96C25003B9851 /* SFCAMBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCAMBoard.h; sourceTree = "<group>"; };
+		168945421BF96C25003B9851 /* SFCAMBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCAMBoard.m; sourceTree = "<group>"; };
+		168945441BF99A1A003B9851 /* SFImageValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFImageValueTransformer.h; sourceTree = "<group>"; };
+		168945451BF99A1A003B9851 /* SFImageValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFImageValueTransformer.m; sourceTree = "<group>"; };
+		168945481BF9A6F3003B9851 /* SFCommonFounction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCommonFounction.h; sourceTree = "<group>"; };
+		168945491BF9A6F3003B9851 /* SFCommonFounction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCommonFounction.m; sourceTree = "<group>"; };
+		1689454B1BF9E00D003B9851 /* CAMPreferences.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CAMPreferences.plist; sourceTree = "<group>"; };
+		168B40D11C4F8580005BFFF3 /* SFRecordWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFRecordWriter.h; sourceTree = "<group>"; };
+		168B40D21C4F8580005BFFF3 /* SFRecordWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFRecordWriter.m; sourceTree = "<group>"; };
+		169885F01C489676003C59F3 /* SFUserManagement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFUserManagement.h; sourceTree = "<group>"; };
+		169885F11C489676003C59F3 /* SFUserManagement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFUserManagement.m; sourceTree = "<group>"; };
+		169885F21C489676003C59F3 /* SFUserManagement.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFUserManagement.xib; sourceTree = "<group>"; };
+		169885FF1C4A2B22003C59F3 /* SFLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFLogViewController.h; sourceTree = "<group>"; };
+		169886001C4A2B22003C59F3 /* SFLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFLogViewController.m; sourceTree = "<group>"; };
+		169886011C4A2B22003C59F3 /* SFLogViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFLogViewController.xib; sourceTree = "<group>"; };
+		169886041C4A2FEE003C59F3 /* post_uut_loop.command */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = post_uut_loop.command; path = scripts/post_uut_loop.command; sourceTree = SOURCE_ROOT; };
+		169886051C4A2FEE003C59F3 /* post_uut.command */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = post_uut.command; path = scripts/post_uut.command; sourceTree = SOURCE_ROOT; };
+		169886061C4A2FEE003C59F3 /* pre_uut_loop.command */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = pre_uut_loop.command; path = scripts/pre_uut_loop.command; sourceTree = SOURCE_ROOT; };
+		169886071C4A2FEE003C59F3 /* pre_uut.command */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = pre_uut.command; path = scripts/pre_uut.command; sourceTree = SOURCE_ROOT; };
+		16A393F01C8BECD100298EE0 /* VersionHistory.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VersionHistory.txt; sourceTree = "<group>"; };
+		16A393F21C8DDD2D00298EE0 /* pair.command */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = pair.command; path = scripts/pair.command; sourceTree = SOURCE_ROOT; };
+		16A393F41C8DDD3B00298EE0 /* unpair.command */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = unpair.command; path = scripts/unpair.command; sourceTree = SOURCE_ROOT; };
+		16A94E9F1C565E0800E65D6B /* SFReportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFReportViewController.h; sourceTree = "<group>"; };
+		16A94EA01C565E0800E65D6B /* SFReportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFReportViewController.m; sourceTree = "<group>"; };
+		16A94EA11C565E0800E65D6B /* SFReportViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFReportViewController.xib; sourceTree = "<group>"; };
+		16A94EA71C565EF100E65D6B /* SFUPHView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFUPHView.h; sourceTree = "<group>"; };
+		16A94EA81C565EF100E65D6B /* SFUPHView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFUPHView.m; sourceTree = "<group>"; };
+		16A94EA91C565EF100E65D6B /* SFYieldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFYieldView.h; sourceTree = "<group>"; };
+		16A94EAA1C565EF100E65D6B /* SFYieldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFYieldView.m; sourceTree = "<group>"; };
+		16A94EAD1C565F2400E65D6B /* SFBasePlotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBasePlotView.h; sourceTree = "<group>"; };
+		16A94EAE1C565F2400E65D6B /* SFBasePlotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBasePlotView.m; sourceTree = "<group>"; };
+		16A94EB01C5662A600E65D6B /* flash_ic.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = flash_ic.ico; sourceTree = "<group>"; };
+		16B0BDC21C41671B00B8908D /* SFAuthWinowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFAuthWinowController.h; sourceTree = "<group>"; };
+		16B0BDC31C41671B00B8908D /* SFAuthWinowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFAuthWinowController.m; sourceTree = "<group>"; };
+		16B0BDC41C41671B00B8908D /* SFAuthWinowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFAuthWinowController.xib; sourceTree = "<group>"; };
+		16B0BDC71C41690800B8908D /* SFAuthenticator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFAuthenticator.h; sourceTree = "<group>"; };
+		16B0BDC81C41690800B8908D /* SFAuthenticator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFAuthenticator.m; sourceTree = "<group>"; };
+		16BC83B41C75A7E400E68148 /* mojo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mojo.png; sourceTree = "<group>"; };
+		16C58A8C1C4F7156006434D6 /* SFStatusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFStatusViewController.h; sourceTree = "<group>"; };
+		16C58A8D1C4F7156006434D6 /* SFStatusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFStatusViewController.m; sourceTree = "<group>"; };
+		16C58A8E1C4F7156006434D6 /* SFStatusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFStatusViewController.xib; sourceTree = "<group>"; };
+		16D9DE8C1C2840A500CD2665 /* SFNANDRackMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFNANDRackMainView.h; sourceTree = "<group>"; };
+		16D9DE8D1C2840A500CD2665 /* SFNANDRackMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFNANDRackMainView.m; sourceTree = "<group>"; };
+		16D9DE8F1C29574D00CD2665 /* QREncoder.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QREncoder.framework; path = Frameworks/QREncoder.framework; sourceTree = "<group>"; };
+		16D9DE971C2A2F1500CD2665 /* SFSlotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSlotView.h; sourceTree = "<group>"; };
+		16D9DE981C2A2F1500CD2665 /* SFSlotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSlotView.m; sourceTree = "<group>"; };
+		16D9DE9A1C2A403600CD2665 /* SFFixtureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFFixtureView.h; sourceTree = "<group>"; };
+		16D9DE9B1C2A403600CD2665 /* SFFixtureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFFixtureView.m; sourceTree = "<group>"; };
+		16DB31781C0C7D88008DB1E2 /* Python */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = Python; path = ../../../../System/Library/Frameworks/Python.framework/Versions/2.7/Python; sourceTree = "<group>"; };
+		16DB317A1C0C7E88008DB1E2 /* Python.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Python.framework; path = ../../../../System/Library/Frameworks/Python.framework; sourceTree = "<group>"; };
+		16FA84521C0206EE006C275D /* run_nanokdp.command */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = run_nanokdp.command; path = scripts/run_nanokdp.command; sourceTree = SOURCE_ROOT; };
+		16FA84561C035198006C275D /* seq_by_csv_plist.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = seq_by_csv_plist.py; path = scripts/seq_by_csv_plist.py; sourceTree = SOURCE_ROOT; };
+		16FA84591C035337006C275D /* CAMSequnce.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CAMSequnce.plist; sourceTree = "<group>"; };
+		16FA845B1C036A47006C275D /* codec_debug */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = codec_debug; sourceTree = "<group>"; };
+		1F77D2A61BFF254500D57F9A /* SFLocalBootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFLocalBootViewController.h; sourceTree = "<group>"; };
+		1F77D2A71BFF254500D57F9A /* SFLocalBootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFLocalBootViewController.m; sourceTree = "<group>"; };
+		1F77D2A81BFF254500D57F9A /* SFLocalBootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFLocalBootViewController.xib; sourceTree = "<group>"; };
+		1F77D2AB1BFF44B700D57F9A /* read_adc.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; name = read_adc.py; path = scripts/read_adc.py; sourceTree = SOURCE_ROOT; };
+		1F77D2AD1BFF479F00D57F9A /* SFCAMInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCAMInfo.h; sourceTree = "<group>"; };
+		1F77D2AE1BFF479F00D57F9A /* SFCAMInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCAMInfo.m; sourceTree = "<group>"; };
+		1FE84F931C00798200FB237A /* nanokdp */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = nanokdp; path = scripts/nanokdp; sourceTree = SOURCE_ROOT; };
+		1FE84F961C008C7C00FB237A /* mac2ip.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = mac2ip.py; path = scripts/mac2ip.py; sourceTree = SOURCE_ROOT; };
+		1FFC59EB1C5F83370079CB6C /* SFUserLoginVerificationWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFUserLoginVerificationWindowController.h; sourceTree = "<group>"; };
+		1FFC59EC1C5F83370079CB6C /* SFUserLoginVerificationWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFUserLoginVerificationWindowController.m; sourceTree = "<group>"; };
+		1FFC59ED1C5F83370079CB6C /* SFUserLoginVerificationWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFUserLoginVerificationWindowController.xib; sourceTree = "<group>"; };
+		740ECA131C58674100F1B9F2 /* YieldReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YieldReport.h; sourceTree = "<group>"; };
+		740ECA141C58674100F1B9F2 /* YieldReport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YieldReport.m; sourceTree = "<group>"; };
+		740ECA161C58674200F1B9F2 /* SystemLogs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemLogs.h; sourceTree = "<group>"; };
+		740ECA171C58674200F1B9F2 /* SystemLogs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemLogs.m; sourceTree = "<group>"; };
+		742E050A1C58ECC600A3DE71 /* QRBitBuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRBitBuffer.h; sourceTree = "<group>"; };
+		742E050B1C58ECC600A3DE71 /* QRCorrectionLevel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRCorrectionLevel.h; sourceTree = "<group>"; };
+		742E050C1C58ECC600A3DE71 /* QREncoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QREncoder.h; sourceTree = "<group>"; };
+		742E050D1C58ECC600A3DE71 /* QRMath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRMath.h; sourceTree = "<group>"; };
+		742E050E1C58ECC600A3DE71 /* QRMatrix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRMatrix.h; sourceTree = "<group>"; };
+		742E050F1C58ECC600A3DE71 /* QRPolynomial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRPolynomial.h; sourceTree = "<group>"; };
+		742E05101C58ECC600A3DE71 /* QRRSBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRRSBlock.h; sourceTree = "<group>"; };
+		74FB43411C5A35A8006C1020 /* SFSlotCommunication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSlotCommunication.h; sourceTree = "<group>"; };
+		74FB43421C5A35A8006C1020 /* SFSlotCommunication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSlotCommunication.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		163975E41BF48510005EC82B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16DB317C1C0C81BF008DB1E2 /* Python in Frameworks */,
+				163975EB1BF48510005EC82B /* Cocoa.framework in Frameworks */,
+				16D9DE901C29574D00CD2665 /* QREncoder.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		160CC7EB1C7C3DF500FE5F95 /* Mojo */ = {
+			isa = PBXGroup;
+			children = (
+				160CC7ED1C7C3ED200FE5F95 /* SFMojoViewController.h */,
+				160CC7EE1C7C3ED200FE5F95 /* SFMojoViewController.m */,
+				160CC7EF1C7C3ED200FE5F95 /* SFMojoViewController.xib */,
+			);
+			name = Mojo;
+			sourceTree = "<group>";
+		};
+		161ADF3B1C42545700CAC3AA /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				161ADF3C1C42548100CAC3AA /* SFPreferencesWindowController.h */,
+				161ADF3D1C42548100CAC3AA /* SFPreferencesWindowController.m */,
+				161ADF3E1C42548100CAC3AA /* SFPreferencesWindowController.xib */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+		16388F071C33B0890073846B /* Pair/Unpair */ = {
+			isa = PBXGroup;
+			children = (
+				74FB43411C5A35A8006C1020 /* SFSlotCommunication.h */,
+				74FB43421C5A35A8006C1020 /* SFSlotCommunication.m */,
+				16388F081C33B0B80073846B /* SFPairViewController.h */,
+				16388F091C33B0B80073846B /* SFPairViewController.m */,
+				16388F0A1C33B0B80073846B /* SFPairViewController.xib */,
+				1627CC581C3F9FEE00BD9CD4 /* SFWhiteMaskView.h */,
+				1627CC591C3F9FEE00BD9CD4 /* SFWhiteMaskView.m */,
+			);
+			name = Pair/Unpair;
+			sourceTree = "<group>";
+		};
+		163959851BFF744F002423DD /* SlotSetting */ = {
+			isa = PBXGroup;
+			children = (
+				163959861BFF748D002423DD /* SFFixtueSettingViewController.h */,
+				163959871BFF748D002423DD /* SFFixtueSettingViewController.m */,
+				163959881BFF748D002423DD /* SFFixtueSettingViewController.xib */,
+			);
+			name = SlotSetting;
+			sourceTree = "<group>";
+		};
+		163959901C001B0C002423DD /* rs232 */ = {
+			isa = PBXGroup;
+			children = (
+				163959981C001BE5002423DD /* rs232_posix.c */,
+				163959991C001BE5002423DD /* rs232_posix.h */,
+				1639599A1C001BE5002423DD /* rs232.c */,
+				1639599B1C001BE5002423DD /* rs232.h */,
+			);
+			name = rs232;
+			sourceTree = "<group>";
+		};
+		163959911C001B1A002423DD /* tcp */ = {
+			isa = PBXGroup;
+			children = (
+				163959951C001BD5002423DD /* tcpconnect.c */,
+				163959961C001BD5002423DD /* tcpconnect.h */,
+			);
+			name = tcp;
+			sourceTree = "<group>";
+		};
+		163975DE1BF48510005EC82B = {
+			isa = PBXGroup;
+			children = (
+				163975F01BF48510005EC82B /* CAMTOOL */,
+				1639760E1BF48510005EC82B /* CAMTOOLTests */,
+				163975E91BF48510005EC82B /* Frameworks */,
+				163975E81BF48510005EC82B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		163975E81BF48510005EC82B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				163975E71BF48510005EC82B /* CAMTOOL.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		163975E91BF48510005EC82B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16D9DE8F1C29574D00CD2665 /* QREncoder.framework */,
+				16DB317A1C0C7E88008DB1E2 /* Python.framework */,
+				16DB31781C0C7D88008DB1E2 /* Python */,
+				163975EA1BF48510005EC82B /* Cocoa.framework */,
+				163976091BF48510005EC82B /* XCTest.framework */,
+				163975EC1BF48510005EC82B /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		163975EC1BF48510005EC82B /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				163975ED1BF48510005EC82B /* AppKit.framework */,
+				163975EE1BF48510005EC82B /* CoreData.framework */,
+				163975EF1BF48510005EC82B /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		163975F01BF48510005EC82B /* CAMTOOL */ = {
+			isa = PBXGroup;
+			children = (
+				160CC7EB1C7C3DF500FE5F95 /* Mojo */,
+				742E05091C58ECC600A3DE71 /* Headers */,
+				164899321C54B32200D9F0BA /* CoreData */,
+				16C58A911C4F715E006434D6 /* StatusViews */,
+				169885FE1C4A2ACC003C59F3 /* Records */,
+				169885EF1C489653003C59F3 /* UserManagement */,
+				161ADF3B1C42545700CAC3AA /* Preferences */,
+				16D6E1881C40C4FB0075C76E /* Auth */,
+				163959851BFF744F002423DD /* SlotSetting */,
+				16388F071C33B0890073846B /* Pair/Unpair */,
+				165723C01C17184600052F6A /* TestSequnces */,
+				163959911C001B1A002423DD /* tcp */,
+				163959901C001B0C002423DD /* rs232 */,
+				1F77D2A51BFF24EA00D57F9A /* Local Boot */,
+				168945471BF9A69A003B9851 /* Common */,
+				1639763A1BF5BA3A005EC82B /* Navigation */,
+				163976341BF5AFC8005EC82B /* scripts */,
+				163976461BF5BDD7005EC82B /* Images */,
+				1639762E1BF58598005EC82B /* Probe CAM */,
+				1639761E1BF486B3005EC82B /* Flash CAM */,
+				163975FC1BF48510005EC82B /* SFAppDelegate.h */,
+				163975FD1BF48510005EC82B /* SFAppDelegate.m */,
+				163975FF1BF48510005EC82B /* MainMenu.xib */,
+				163976441BF5BD7E005EC82B /* UnderContructionView.xib */,
+				163976021BF48510005EC82B /* Images.xcassets */,
+				163975F11BF48510005EC82B /* Supporting Files */,
+				16FA84591C035337006C275D /* CAMSequnce.plist */,
+				161ADF391C424C1200CAC3AA /* Accounts.plist */,
+				1689454B1BF9E00D003B9851 /* CAMPreferences.plist */,
+				16A393F01C8BECD100298EE0 /* VersionHistory.txt */,
+			);
+			path = CAMTOOL;
+			sourceTree = "<group>";
+		};
+		163975F11BF48510005EC82B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				163975F21BF48510005EC82B /* CAMTOOL-Info.plist */,
+				163975F31BF48510005EC82B /* InfoPlist.strings */,
+				163975F61BF48510005EC82B /* main.m */,
+				163975F81BF48510005EC82B /* CAMTOOL-Prefix.pch */,
+				163975F91BF48510005EC82B /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1639760E1BF48510005EC82B /* CAMTOOLTests */ = {
+			isa = PBXGroup;
+			children = (
+				163976141BF48510005EC82B /* CAMTOOLTests.m */,
+				1639760F1BF48510005EC82B /* Supporting Files */,
+			);
+			path = CAMTOOLTests;
+			sourceTree = "<group>";
+		};
+		1639760F1BF48510005EC82B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				163976101BF48510005EC82B /* CAMTOOLTests-Info.plist */,
+				163976111BF48510005EC82B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1639761E1BF486B3005EC82B /* Flash CAM */ = {
+			isa = PBXGroup;
+			children = (
+				1639762C1BF49AC9005EC82B /* codec_debug */,
+				163976261BF4881D005EC82B /* SFFlashViewController.h */,
+				163976271BF4881D005EC82B /* SFFlashViewController.m */,
+				163976281BF4881D005EC82B /* SFFlashViewController.xib */,
+			);
+			name = "Flash CAM";
+			sourceTree = "<group>";
+		};
+		1639762E1BF58598005EC82B /* Probe CAM */ = {
+			isa = PBXGroup;
+			children = (
+				1639762F1BF585D0005EC82B /* SFCAMViewController.h */,
+				163976301BF585D0005EC82B /* SFCAMViewController.m */,
+				163976311BF585D0005EC82B /* SFCAMViewController.xib */,
+				163976B11BF5DB51005EC82B /* SFCAMPortItem.h */,
+				163976B21BF5DB51005EC82B /* SFCAMPortItem.m */,
+				168945411BF96C25003B9851 /* SFCAMBoard.h */,
+				168945421BF96C25003B9851 /* SFCAMBoard.m */,
+			);
+			name = "Probe CAM";
+			sourceTree = "<group>";
+		};
+		163976341BF5AFC8005EC82B /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				169886041C4A2FEE003C59F3 /* post_uut_loop.command */,
+				169886051C4A2FEE003C59F3 /* post_uut.command */,
+				16A393F21C8DDD2D00298EE0 /* pair.command */,
+				16A393F41C8DDD3B00298EE0 /* unpair.command */,
+				169886061C4A2FEE003C59F3 /* pre_uut_loop.command */,
+				169886071C4A2FEE003C59F3 /* pre_uut.command */,
+				1F77D2AB1BFF44B700D57F9A /* read_adc.py */,
+				165723C91C1721C400052F6A /* MainSeq.py */,
+				16FA84561C035198006C275D /* seq_by_csv_plist.py */,
+				16251E5D1C0779E100F54F54 /* ping_all.command */,
+				1FE84F961C008C7C00FB237A /* mac2ip.py */,
+				16FA845B1C036A47006C275D /* codec_debug */,
+				1FE84F931C00798200FB237A /* nanokdp */,
+				16FA84521C0206EE006C275D /* run_nanokdp.command */,
+				163976351BF5AFE0005EC82B /* cam_probe.pl */,
+			);
+			name = scripts;
+			sourceTree = "<group>";
+		};
+		1639763A1BF5BA3A005EC82B /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				163976381BF5B935005EC82B /* navigation.plist */,
+				1639763E1BF5BB35005EC82B /* SFMainView.h */,
+				1639763F1BF5BB35005EC82B /* SFMainView.m */,
+				163976411BF5BC2B005EC82B /* NavigationItem.h */,
+				163976421BF5BC2B005EC82B /* NavigationItem.m */,
+				1639763B1BF5BA47005EC82B /* NavigationController.h */,
+				1639763C1BF5BA47005EC82B /* NavigationController.m */,
+			);
+			name = Navigation;
+			sourceTree = "<group>";
+		};
+		163976461BF5BDD7005EC82B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				163976471BF5BDD7005EC82B /* button_cross.png */,
+				16A94EB01C5662A600E65D6B /* flash_ic.ico */,
+				16251E5F1C077B0900F54F54 /* probe.gif */,
+				163976481BF5BDD7005EC82B /* button_start.png */,
+				16388F031C33AE970073846B /* icon_tester.ico */,
+				163976491BF5BDD7005EC82B /* button_stop.png */,
+				16388F051C33AE9F0073846B /* icon_pair.ico */,
+				1639764A1BF5BDD7005EC82B /* connected.png */,
+				1639764B1BF5BDD7005EC82B /* disconnected.png */,
+				1639764C1BF5BDD7005EC82B /* icon_cell.ico */,
+				1639764D1BF5BDD7005EC82B /* icon_device.ico */,
+				1639764E1BF5BDD7005EC82B /* icon_log.ico */,
+				1639764F1BF5BDD7005EC82B /* icon_login.png */,
+				163976501BF5BDD7005EC82B /* icon_logout.png */,
+				163976511BF5BDD7005EC82B /* icon_settings.ico */,
+				163976521BF5BDD7005EC82B /* icon_yield.ico */,
+				16BC83B41C75A7E400E68148 /* mojo.png */,
+				163976531BF5BDD7005EC82B /* ledgray.png */,
+				163976541BF5BDD7005EC82B /* ledgreen.png */,
+				163976551BF5BDD7005EC82B /* ledorange.png */,
+				163976561BF5BDD7005EC82B /* ledred.png */,
+				163976571BF5BDD7005EC82B /* ng.tiff */,
+				163976581BF5BDD7005EC82B /* ok.tiff */,
+				163976591BF5BDD7005EC82B /* star-off.tiff */,
+				1639765A1BF5BDD7005EC82B /* star-on.tiff */,
+				1639765B1BF5BDD7005EC82B /* under_construction.gif */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		164899321C54B32200D9F0BA /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				1648992F1C54B2DD00D9F0BA /* SFDataModel.xcdatamodeld */,
+				164899391C54B6AC00D9F0BA /* SFDataCenter.h */,
+				1648993A1C54B6AC00D9F0BA /* SFDataCenter.m */,
+				740ECA161C58674200F1B9F2 /* SystemLogs.h */,
+				740ECA171C58674200F1B9F2 /* SystemLogs.m */,
+				740ECA131C58674100F1B9F2 /* YieldReport.h */,
+				740ECA141C58674100F1B9F2 /* YieldReport.m */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		165723C01C17184600052F6A /* TestSequnces */ = {
+			isa = PBXGroup;
+			children = (
+				165723C41C17189800052F6A /* SFTestSeqViewController.h */,
+				165723C51C17189800052F6A /* SFTestSeqViewController.m */,
+				165723C61C17189800052F6A /* SFTestSeqViewController.xib */,
+				16D9DE8C1C2840A500CD2665 /* SFNANDRackMainView.h */,
+				16D9DE8D1C2840A500CD2665 /* SFNANDRackMainView.m */,
+				16D9DE9A1C2A403600CD2665 /* SFFixtureView.h */,
+				16D9DE9B1C2A403600CD2665 /* SFFixtureView.m */,
+				16D9DE971C2A2F1500CD2665 /* SFSlotView.h */,
+				16D9DE981C2A2F1500CD2665 /* SFSlotView.m */,
+			);
+			name = TestSequnces;
+			sourceTree = "<group>";
+		};
+		168945471BF9A69A003B9851 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				168945441BF99A1A003B9851 /* SFImageValueTransformer.h */,
+				168945451BF99A1A003B9851 /* SFImageValueTransformer.m */,
+				164B250C1C057C570034BC82 /* SFViewController.h */,
+				164B250D1C057C570034BC82 /* SFViewController.m */,
+				168945481BF9A6F3003B9851 /* SFCommonFounction.h */,
+				168945491BF9A6F3003B9851 /* SFCommonFounction.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		169885EF1C489653003C59F3 /* UserManagement */ = {
+			isa = PBXGroup;
+			children = (
+				169885F01C489676003C59F3 /* SFUserManagement.h */,
+				169885F11C489676003C59F3 /* SFUserManagement.m */,
+				169885F21C489676003C59F3 /* SFUserManagement.xib */,
+			);
+			name = UserManagement;
+			sourceTree = "<group>";
+		};
+		169885FE1C4A2ACC003C59F3 /* Records */ = {
+			isa = PBXGroup;
+			children = (
+				168B40D11C4F8580005BFFF3 /* SFRecordWriter.h */,
+				168B40D21C4F8580005BFFF3 /* SFRecordWriter.m */,
+				169885FF1C4A2B22003C59F3 /* SFLogViewController.h */,
+				169886001C4A2B22003C59F3 /* SFLogViewController.m */,
+				169886011C4A2B22003C59F3 /* SFLogViewController.xib */,
+				16A94EA71C565EF100E65D6B /* SFUPHView.h */,
+				16A94EA81C565EF100E65D6B /* SFUPHView.m */,
+				16A94EA91C565EF100E65D6B /* SFYieldView.h */,
+				16A94EAA1C565EF100E65D6B /* SFYieldView.m */,
+				16A94EAD1C565F2400E65D6B /* SFBasePlotView.h */,
+				16A94EAE1C565F2400E65D6B /* SFBasePlotView.m */,
+				16A94EA11C565E0800E65D6B /* SFReportViewController.xib */,
+				16A94E9F1C565E0800E65D6B /* SFReportViewController.h */,
+				16A94EA01C565E0800E65D6B /* SFReportViewController.m */,
+			);
+			name = Records;
+			sourceTree = "<group>";
+		};
+		16C58A911C4F715E006434D6 /* StatusViews */ = {
+			isa = PBXGroup;
+			children = (
+				16C58A8C1C4F7156006434D6 /* SFStatusViewController.h */,
+				16C58A8D1C4F7156006434D6 /* SFStatusViewController.m */,
+				16C58A8E1C4F7156006434D6 /* SFStatusViewController.xib */,
+				161ADF311C4233FD00CAC3AA /* SFStatusView.h */,
+				161ADF321C4233FD00CAC3AA /* SFStatusView.m */,
+			);
+			name = StatusViews;
+			sourceTree = "<group>";
+		};
+		16D6E1881C40C4FB0075C76E /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				16505DF71C40D97200F89FA6 /* SFAccessDeniedView.h */,
+				16505DF81C40D97200F89FA6 /* SFAccessDeniedView.m */,
+				16B0BDC21C41671B00B8908D /* SFAuthWinowController.h */,
+				16B0BDC31C41671B00B8908D /* SFAuthWinowController.m */,
+				16B0BDC41C41671B00B8908D /* SFAuthWinowController.xib */,
+				16B0BDC71C41690800B8908D /* SFAuthenticator.h */,
+				16B0BDC81C41690800B8908D /* SFAuthenticator.m */,
+				161ADF341C42420D00CAC3AA /* SFChangePasswordWindowController.h */,
+				161ADF351C42420D00CAC3AA /* SFChangePasswordWindowController.m */,
+				161ADF361C42420D00CAC3AA /* SFChangePasswordWindowController.xib */,
+				1FFC59EB1C5F83370079CB6C /* SFUserLoginVerificationWindowController.h */,
+				1FFC59EC1C5F83370079CB6C /* SFUserLoginVerificationWindowController.m */,
+				1FFC59ED1C5F83370079CB6C /* SFUserLoginVerificationWindowController.xib */,
+			);
+			name = Auth;
+			sourceTree = "<group>";
+		};
+		1F77D2A51BFF24EA00D57F9A /* Local Boot */ = {
+			isa = PBXGroup;
+			children = (
+				1F77D2A61BFF254500D57F9A /* SFLocalBootViewController.h */,
+				1F77D2A71BFF254500D57F9A /* SFLocalBootViewController.m */,
+				1F77D2A81BFF254500D57F9A /* SFLocalBootViewController.xib */,
+				1F77D2AD1BFF479F00D57F9A /* SFCAMInfo.h */,
+				1F77D2AE1BFF479F00D57F9A /* SFCAMInfo.m */,
+			);
+			name = "Local Boot";
+			sourceTree = "<group>";
+		};
+		742E05091C58ECC600A3DE71 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				742E050A1C58ECC600A3DE71 /* QRBitBuffer.h */,
+				742E050B1C58ECC600A3DE71 /* QRCorrectionLevel.h */,
+				742E050C1C58ECC600A3DE71 /* QREncoder.h */,
+				742E050D1C58ECC600A3DE71 /* QRMath.h */,
+				742E050E1C58ECC600A3DE71 /* QRMatrix.h */,
+				742E050F1C58ECC600A3DE71 /* QRPolynomial.h */,
+				742E05101C58ECC600A3DE71 /* QRRSBlock.h */,
+			);
+			path = Headers;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		163975E61BF48510005EC82B /* CAMTOOL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 163976181BF48510005EC82B /* Build configuration list for PBXNativeTarget "CAMTOOL" */;
+			buildPhases = (
+				163975E31BF48510005EC82B /* Sources */,
+				163975E41BF48510005EC82B /* Frameworks */,
+				163975E51BF48510005EC82B /* Resources */,
+				1639762B1BF49A64005EC82B /* CopyFiles */,
+				1639598D1BFF9DA1002423DD /* CopyFiles */,
+				1698860C1C4A3047003C59F3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CAMTOOL;
+			productName = CAMTOOL;
+			productReference = 163975E71BF48510005EC82B /* CAMTOOL.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		163975DF1BF48510005EC82B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SF;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = sifo;
+			};
+			buildConfigurationList = 163975E21BF48510005EC82B /* Build configuration list for PBXProject "CAMTOOL" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 163975DE1BF48510005EC82B;
+			productRefGroup = 163975E81BF48510005EC82B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				163975E61BF48510005EC82B /* CAMTOOL */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		163975E51BF48510005EC82B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16EC8B2D1C911AFA00BFF205 /* VersionHistory.txt in Resources */,
+				1649EA7D1C3F562300DB7B7D /* MainMenu.xib in Resources */,
+				163976621BF5BDD7005EC82B /* icon_device.ico in Resources */,
+				1639766F1BF5BDD7005EC82B /* star-on.tiff in Resources */,
+				161ADF401C42548100CAC3AA /* SFPreferencesWindowController.xib in Resources */,
+				1639762A1BF4881D005EC82B /* SFFlashViewController.xib in Resources */,
+				16BC83B51C75A7E400E68148 /* mojo.png in Resources */,
+				163976691BF5BDD7005EC82B /* ledgreen.png in Resources */,
+				163975F51BF48510005EC82B /* InfoPlist.strings in Resources */,
+				1F77D2AA1BFF254500D57F9A /* SFLocalBootViewController.xib in Resources */,
+				163976391BF5B935005EC82B /* navigation.plist in Resources */,
+				161ADF3A1C424C1200CAC3AA /* Accounts.plist in Resources */,
+				16388F041C33AE970073846B /* icon_tester.ico in Resources */,
+				163976651BF5BDD7005EC82B /* icon_logout.png in Resources */,
+				1689454C1BF9E00D003B9851 /* CAMPreferences.plist in Resources */,
+				1639766B1BF5BDD7005EC82B /* ledred.png in Resources */,
+				16C58A901C4F7156006434D6 /* SFStatusViewController.xib in Resources */,
+				169886031C4A2B22003C59F3 /* SFLogViewController.xib in Resources */,
+				163976031BF48510005EC82B /* Images.xcassets in Resources */,
+				160CC7F11C7C3ED200FE5F95 /* SFMojoViewController.xib in Resources */,
+				16B0BDC61C41671B00B8908D /* SFAuthWinowController.xib in Resources */,
+				163976681BF5BDD7005EC82B /* ledgray.png in Resources */,
+				1639766D1BF5BDD7005EC82B /* ok.tiff in Resources */,
+				1639766E1BF5BDD7005EC82B /* star-off.tiff in Resources */,
+				163976631BF5BDD7005EC82B /* icon_log.ico in Resources */,
+				1639766A1BF5BDD7005EC82B /* ledorange.png in Resources */,
+				1639765D1BF5BDD7005EC82B /* button_start.png in Resources */,
+				16251E601C077B0900F54F54 /* probe.gif in Resources */,
+				16A94EA31C565E0800E65D6B /* SFReportViewController.xib in Resources */,
+				163975FB1BF48510005EC82B /* Credits.rtf in Resources */,
+				16388F061C33AE9F0073846B /* icon_pair.ico in Resources */,
+				1FFC59EF1C5F83370079CB6C /* SFUserLoginVerificationWindowController.xib in Resources */,
+				16388F0C1C33B0B80073846B /* SFPairViewController.xib in Resources */,
+				163976701BF5BDD7005EC82B /* under_construction.gif in Resources */,
+				165723C81C17189800052F6A /* SFTestSeqViewController.xib in Resources */,
+				163976601BF5BDD7005EC82B /* disconnected.png in Resources */,
+				161ADF381C42420D00CAC3AA /* SFChangePasswordWindowController.xib in Resources */,
+				163976671BF5BDD7005EC82B /* icon_yield.ico in Resources */,
+				1639765E1BF5BDD7005EC82B /* button_stop.png in Resources */,
+				1639765F1BF5BDD7005EC82B /* connected.png in Resources */,
+				1639598A1BFF748D002423DD /* SFFixtueSettingViewController.xib in Resources */,
+				1639765C1BF5BDD7005EC82B /* button_cross.png in Resources */,
+				169885F41C489676003C59F3 /* SFUserManagement.xib in Resources */,
+				163976451BF5BD7E005EC82B /* UnderContructionView.xib in Resources */,
+				16A94EB11C5662A600E65D6B /* flash_ic.ico in Resources */,
+				163976331BF585D0005EC82B /* SFCAMViewController.xib in Resources */,
+				16FA845A1C035337006C275D /* CAMSequnce.plist in Resources */,
+				163976641BF5BDD7005EC82B /* icon_login.png in Resources */,
+				163976611BF5BDD7005EC82B /* icon_cell.ico in Resources */,
+				163976661BF5BDD7005EC82B /* icon_settings.ico in Resources */,
+				1639766C1BF5BDD7005EC82B /* ng.tiff in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		163975E31BF48510005EC82B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16C58A8F1C4F7156006434D6 /* SFStatusViewController.m in Sources */,
+				165723C71C17189800052F6A /* SFTestSeqViewController.m in Sources */,
+				163976B31BF5DB51005EC82B /* SFCAMPortItem.m in Sources */,
+				16A94EAF1C565F2400E65D6B /* SFBasePlotView.m in Sources */,
+				164899311C54B2DD00D9F0BA /* SFDataModel.xcdatamodeld in Sources */,
+				1F77D2A91BFF254500D57F9A /* SFLocalBootViewController.m in Sources */,
+				16B0BDC51C41671B00B8908D /* SFAuthWinowController.m in Sources */,
+				168945431BF96C25003B9851 /* SFCAMBoard.m in Sources */,
+				1639599D1C001BE5002423DD /* rs232.c in Sources */,
+				161ADF371C42420D00CAC3AA /* SFChangePasswordWindowController.m in Sources */,
+				16B0BDC91C41690800B8908D /* SFAuthenticator.m in Sources */,
+				1627CC5A1C3F9FEE00BD9CD4 /* SFWhiteMaskView.m in Sources */,
+				1FFC59EE1C5F83370079CB6C /* SFUserLoginVerificationWindowController.m in Sources */,
+				16D9DE9C1C2A403600CD2665 /* SFFixtureView.m in Sources */,
+				169886021C4A2B22003C59F3 /* SFLogViewController.m in Sources */,
+				163959891BFF748D002423DD /* SFFixtueSettingViewController.m in Sources */,
+				16D9DE991C2A2F1500CD2665 /* SFSlotView.m in Sources */,
+				163959971C001BD5002423DD /* tcpconnect.c in Sources */,
+				168945461BF99A1A003B9851 /* SFImageValueTransformer.m in Sources */,
+				1648993B1C54B6AC00D9F0BA /* SFDataCenter.m in Sources */,
+				740ECA181C58674200F1B9F2 /* SystemLogs.m in Sources */,
+				16A94EA21C565E0800E65D6B /* SFReportViewController.m in Sources */,
+				163975F71BF48510005EC82B /* main.m in Sources */,
+				163976321BF585D0005EC82B /* SFCAMViewController.m in Sources */,
+				169885F31C489676003C59F3 /* SFUserManagement.m in Sources */,
+				16505DF91C40D97200F89FA6 /* SFAccessDeniedView.m in Sources */,
+				16A94EAC1C565EF100E65D6B /* SFYieldView.m in Sources */,
+				161ADF331C4233FD00CAC3AA /* SFStatusView.m in Sources */,
+				16D9DE8E1C2840A500CD2665 /* SFNANDRackMainView.m in Sources */,
+				16388F0B1C33B0B80073846B /* SFPairViewController.m in Sources */,
+				163976431BF5BC2B005EC82B /* NavigationItem.m in Sources */,
+				740ECA151C58674100F1B9F2 /* YieldReport.m in Sources */,
+				1639763D1BF5BA47005EC82B /* NavigationController.m in Sources */,
+				163976291BF4881D005EC82B /* SFFlashViewController.m in Sources */,
+				168B40D31C4F8580005BFFF3 /* SFRecordWriter.m in Sources */,
+				163975FE1BF48510005EC82B /* SFAppDelegate.m in Sources */,
+				164B250E1C057C570034BC82 /* SFViewController.m in Sources */,
+				1639599C1C001BE5002423DD /* rs232_posix.c in Sources */,
+				163976401BF5BB35005EC82B /* SFMainView.m in Sources */,
+				1F77D2AF1BFF479F00D57F9A /* SFCAMInfo.m in Sources */,
+				160CC7F01C7C3ED200FE5F95 /* SFMojoViewController.m in Sources */,
+				1689454A1BF9A6F3003B9851 /* SFCommonFounction.m in Sources */,
+				161ADF3F1C42548100CAC3AA /* SFPreferencesWindowController.m in Sources */,
+				74FB43431C5A35A8006C1020 /* SFSlotCommunication.m in Sources */,
+				16A94EAB1C565EF100E65D6B /* SFUPHView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		163975F31BF48510005EC82B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				163975F41BF48510005EC82B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		163975F91BF48510005EC82B /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				163975FA1BF48510005EC82B /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		163975FF1BF48510005EC82B /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				163976001BF48510005EC82B /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		163976111BF48510005EC82B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				163976121BF48510005EC82B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		163976161BF48510005EC82B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		163976171BF48510005EC82B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		163976191BF48510005EC82B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CAMTOOL/CAMTOOL-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/System/Library/Frameworks/Python.framework/Headers,
+					/Applications/Xcode5.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = "CAMTOOL/CAMTOOL-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CAMTOOL",
+					"$(SYSTEM_LIBRARY_DIR)/Frameworks/Python.framework/Versions/2.7",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sifo-ltd.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1639761A1BF48510005EC82B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CAMTOOL/CAMTOOL-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/System/Library/Frameworks/Python.framework/Headers,
+					/Applications/Xcode5.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = "CAMTOOL/CAMTOOL-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CAMTOOL",
+					"$(SYSTEM_LIBRARY_DIR)/Frameworks/Python.framework/Versions/2.7",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sifo-ltd.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		163975E21BF48510005EC82B /* Build configuration list for PBXProject "CAMTOOL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				163976161BF48510005EC82B /* Debug */,
+				163976171BF48510005EC82B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		163976181BF48510005EC82B /* Build configuration list for PBXNativeTarget "CAMTOOL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				163976191BF48510005EC82B /* Debug */,
+				1639761A1BF48510005EC82B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1648992F1C54B2DD00D9F0BA /* SFDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				164899301C54B2DD00D9F0BA /* SFDataModel.xcdatamodel */,
+			);
+			currentVersion = 164899301C54B2DD00D9F0BA /* SFDataModel.xcdatamodel */;
+			path = SFDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 163975DF1BF48510005EC82B /* Project object */;
+}

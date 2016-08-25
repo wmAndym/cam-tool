@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="14E46" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <development version="5100" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5056"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="SFFixtueSettingViewController">
+            <connections>
+                <outlet property="probePanel" destination="PVY-8d-AVH" id="0Za-Tg-HLt"/>
+                <outlet property="saveBtn" destination="QcT-oC-B4x" id="CkK-eN-tJy"/>
+                <outlet property="slotSettingTableView" destination="AXs-yf-Tqf" id="eZF-ey-VRB"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="703" height="454"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <scrollView appearanceType="aqua" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" id="0vp-S5-tPI">
+                    <rect key="frame" x="56" y="100" width="560" height="328"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <clipView key="contentView" id="oKp-E5-KYl">
+                        <rect key="frame" x="1" y="17" width="558" height="310"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" columnReordering="NO" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" headerView="qad-o8-hoz" id="AXs-yf-Tqf">
+                                <rect key="frame" x="0.0" y="0.0" width="558" height="310"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <size key="intercellSpacing" width="3" height="2"/>
+                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <tableViewGridLines key="gridStyleMask" vertical="YES" dashed="YES"/>
+                                <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                <tableColumns>
+                                    <tableColumn identifier="" width="33.6484375" minWidth="10" maxWidth="3.4028234663852886e+38" id="Ul7-9W-N0c">
+                                        <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Enable">
+                                            <font key="font" metaFont="smallSystem"/>
+                                            <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </tableHeaderCell>
+                                        <buttonCell key="dataCell" type="check" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="IiE-3L-FaC">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                        <connections>
+                                            <binding destination="nSs-lW-8UL" name="value" keyPath="arrangedObjects.Enable" id="skO-uL-iJL"/>
+                                        </connections>
+                                    </tableColumn>
+                                    <tableColumn width="54.02734375" minWidth="40" maxWidth="1000" id="zPu-ux-gzI">
+                                        <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Slot">
+                                            <font key="font" metaFont="smallSystem"/>
+                                            <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" white="0.33333298560000002" alpha="1" colorSpace="calibratedWhite"/>
+                                        </tableHeaderCell>
+                                        <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="dqP-TP-bkR">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                        <sortDescriptor key="sortDescriptorPrototype" selector="compare:" sortKey="key"/>
+                                        <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                        <connections>
+                                            <binding destination="nSs-lW-8UL" name="value" keyPath="arrangedObjects.SlotID" id="cHf-fY-bPa"/>
+                                        </connections>
+                                    </tableColumn>
+                                    <tableColumn width="153.84765625" minWidth="40" maxWidth="1000" id="tfx-Ab-JLh">
+                                        <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="MAC Address(CAM)">
+                                            <font key="font" metaFont="smallSystem"/>
+                                            <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" white="0.33333298560000002" alpha="1" colorSpace="calibratedWhite"/>
+                                        </tableHeaderCell>
+                                        <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="Mfs-vO-6Vp">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                        <sortDescriptor key="sortDescriptorPrototype" selector="compare:" sortKey="key"/>
+                                        <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                        <connections>
+                                            <binding destination="nSs-lW-8UL" name="value" keyPath="arrangedObjects.MAC" id="b2K-rL-oYh"/>
+                                        </connections>
+                                    </tableColumn>
+                                    <tableColumn width="164.375" minWidth="40" maxWidth="1000" id="lih-sq-f3h">
+                                        <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="MAC Address(Carrier)">
+                                            <font key="font" metaFont="smallSystem"/>
+                                            <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" white="0.33333298560000002" alpha="1" colorSpace="calibratedWhite"/>
+                                        </tableHeaderCell>
+                                        <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="WdC-0o-QeU">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                        <sortDescriptor key="sortDescriptorPrototype" selector="compare:" sortKey="key"/>
+                                        <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                        <connections>
+                                            <binding destination="nSs-lW-8UL" name="value" keyPath="arrangedObjects.MAC_Slot" id="2wa-A6-vMa"/>
+                                        </connections>
+                                    </tableColumn>
+                                    <tableColumn width="137" minWidth="10" maxWidth="3.4028234663852886e+38" id="Tq6-K2-QqK">
+                                        <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="IP Address(CAM)">
+                                            <font key="font" metaFont="smallSystem"/>
+                                            <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                        </tableHeaderCell>
+                                        <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="e4b-I1-i1g">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                        <sortDescriptor key="sortDescriptorPrototype" selector="compare:" sortKey="key"/>
+                                        <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                        <connections>
+                                            <binding destination="nSs-lW-8UL" name="value" keyPath="arrangedObjects.IP_Address" id="dXc-cx-x4o"/>
+                                        </connections>
+                                    </tableColumn>
+                                </tableColumns>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        <connections>
+                            <outlet property="menu" destination="gq8-9K-p8I" id="GjW-iy-gU4"/>
+                        </connections>
+                    </clipView>
+                    <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="3AJ-kG-QGt">
+                        <rect key="frame" x="1" y="217" width="551" height="16"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                    <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="J7F-fY-b3b">
+                        <rect key="frame" x="-15" y="17" width="16" height="0.0"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                    <tableHeaderView key="headerView" id="qad-o8-hoz">
+                        <rect key="frame" x="0.0" y="0.0" width="558" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </tableHeaderView>
+                </scrollView>
+                <button toolTip="set current setting to default settings" verticalHuggingPriority="750" id="QcT-oC-B4x">
+                    <rect key="frame" x="510" y="41" width="116" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="Set Defaults" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1gj-C9-XDy">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="setDefaultSettings:" target="-2" id="QL2-f1-Mpa"/>
+                    </connections>
+                </button>
+                <button toolTip="update ip address automatically" verticalHuggingPriority="750" id="Ua0-5s-gub">
+                    <rect key="frame" x="408" y="41" width="102" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="Update IP" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="vRW-A0-hP2">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="updateIPAddress:" target="-2" id="cIi-6T-nwn"/>
+                    </connections>
+                </button>
+                <button appearanceType="aqua" verticalHuggingPriority="750" id="hB2-kv-goo">
+                    <rect key="frame" x="50" y="41" width="82" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="pair" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="5Re-8e-D7i">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="pairSlot:" target="-2" id="aif-JX-nt4"/>
+                        <binding destination="nSs-lW-8UL" name="enabled" keyPath="selectedObjects.@count" id="qTE-l6-rH4"/>
+                    </connections>
+                </button>
+                <button appearanceType="aqua" verticalHuggingPriority="750" id="ve4-De-MwS">
+                    <rect key="frame" x="132" y="41" width="97" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="unpair" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="hZC-eX-MpV">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="unpairSlot:" target="-2" id="n0n-Ms-y9g"/>
+                        <binding destination="nSs-lW-8UL" name="enabled" keyPath="selectedObjects.@count" id="5n0-26-7tb"/>
+                    </connections>
+                </button>
+                <button appearanceType="aqua" verticalHuggingPriority="750" id="gpS-WB-NwK">
+                    <rect key="frame" x="229" y="41" width="82" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="pair all" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="QKX-n3-JIm">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="pairAll:" target="-2" id="0Ul-3K-ShQ"/>
+                    </connections>
+                </button>
+                <button appearanceType="aqua" verticalHuggingPriority="750" id="4D6-UZ-8Om">
+                    <rect key="frame" x="311" y="41" width="97" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="unpair all" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="acY-SK-lc3">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="unpairAll:" target="-2" id="Lk2-um-NN4"/>
+                    </connections>
+                </button>
+            </subviews>
+        </customView>
+        <arrayController id="nSs-lW-8UL">
+            <connections>
+                <binding destination="-2" name="contentArray" keyPath="slotSettings" id="TCc-gf-mCn"/>
+            </connections>
+        </arrayController>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" oneShot="NO" visibleAtLaunch="NO" animationBehavior="default" id="PVY-8d-AVH" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" utility="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="151" y="172" width="495" height="279"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
+            <view key="contentView" id="PQw-hH-DiA">
+                <rect key="frame" x="0.0" y="0.0" width="495" height="279"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView id="1dc-3V-tQR">
+                        <rect key="frame" x="62" y="38" width="371" height="202"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="probe" id="8rU-r5-bI1"/>
+                    </imageView>
+                    <textField verticalHuggingPriority="750" id="G5s-eV-5Xn">
+                        <rect key="frame" x="207" y="0.0" width="255" height="51"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="updating..." allowsEditingTextAttributes="YES" id="Fsp-ey-w53">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+            </view>
+        </window>
+        <menu id="gq8-9K-p8I">
+            <items>
+                <menuItem title="pair" id="eeA-Wb-VZp">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="pairSlot:" target="-2" id="hN1-Vf-aFd"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="unpair" id="I54-yT-RON">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="unpairSlot:" target="-2" id="XFA-Un-txv"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="pair all" id="yhu-0l-9uj">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="pairAll:" target="-2" id="IZP-dE-t3J"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="unpair all" id="SDr-QP-pwU">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="unpairAll:" target="-2" id="uNq-yt-eAg"/>
+                    </connections>
+                </menuItem>
+            </items>
+        </menu>
+    </objects>
+    <resources>
+        <image name="probe" width="130" height="90"/>
+    </resources>
+</document>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="14E46" minimumToolsVersion="Xcode 7.0">
+    <entity name="SystemLogs" representedClassName="SystemLogs" syncable="YES">
+        <attribute name="message" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Users" syncable="YES">
+        <attribute name="account_description" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="passcode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="user_level" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="user_name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="YieldReport" representedClassName="YieldReport" syncable="YES">
+        <attribute name="mark" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="result" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="slotName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sn" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="startTimeStamp" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="SystemLogs" positionX="-18" positionY="27" width="128" height="105"/>
+        <element name="Users" positionX="-45" positionY="0" width="128" height="120"/>
+        <element name="YieldReport" positionX="-27" positionY="45" width="128" height="135"/>
+    </elements>
+</model>

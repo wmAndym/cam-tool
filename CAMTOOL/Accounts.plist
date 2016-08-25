@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>User</key>
+		<string>sifo</string>
+		<key>Passcode</key>
+		<string>1e3749e13977014431f159b9e608e27c</string>
+		<key>User-Level</key>
+		<integer>0</integer>
+		<key>Description</key>
+		<string>Super Administrator</string>
+	</dict>
+	<dict>
+		<key>User</key>
+		<string>Administrator</string>
+		<key>Passcode</key>
+		<string>1e3749e13977014431f159b9e608e27c</string>
+		<key>User-Level</key>
+		<integer>1</integer>
+		<key>Description</key>
+		<string>Administrator</string>
+	</dict>
+	<dict>
+		<key>User</key>
+		<string>Operator</string>
+		<key>Passcode</key>
+		<string>202cb962ac59075b964b07152d234b70</string>
+		<key>User-Level</key>
+		<integer>2</integer>
+		<key>Description</key>
+		<string>Operator</string>
+	</dict>
+</array>
+</plist>
