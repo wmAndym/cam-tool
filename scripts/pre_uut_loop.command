@@ -52,8 +52,8 @@ function main()
 }
 
 #killAllRackListener
-echo "do the following command sets in pre uut loop" >$LOG
+#echo "do the following command sets in pre uut loop" >$LOG
 
-/usr/local/wabisabi/kintsugi/fixtures/CAM/bin/racklistener -f 0
+#/usr/local/wabisabi/kintsugi/fixtures/CAM/bin/racklistener -f 0
 #main
 

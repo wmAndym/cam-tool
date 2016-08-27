@@ -684,12 +684,16 @@ static void callPythonScript(const char * script,const char * func_name)
                         //reset startedTimeStamp when uut test finished
                         
                         //update cycle time.
-                        NSTimeInterval endT = [[NSDate date] timeIntervalSince1970];
-                        NSTimeInterval dt = endT - slotView.startedTimeStamp;
-                        [slotView setCt:dt];
-                        
+                        if (ResultViewPassStatus == slotView.status || ResultViewFailedStatus == slotView.status) {
+                            
+                            
+                        }else{
+                            NSTimeInterval endT = [[NSDate date] timeIntervalSince1970];
+                            NSTimeInterval dt = endT - slotView.startedTimeStamp;
+                            [slotView setCt:dt];
+                            
+                        }
                         [slotView setStartedTimeStamp:0];
-                        
                     }
                 }
             }];
@@ -782,7 +786,7 @@ static void callPythonScript(const char * script,const char * func_name)
 -(void)pairSlotView:(SFSlotView *)slotView;
 {
 
-    
+    //slot没有被选择
     if (_selectedSlotView == nil)
     {
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -791,16 +795,23 @@ static void callPythonScript(const char * script,const char * func_name)
         });
         return;
     }
-    
-
+    //serial number不符合规则？
+    NSString *sn=slotView.serialNumber;
+    NSString *prefixSN=[[NSUserDefaults standardUserDefaults] valueForKeyPath:@"PrefixOfUnitSN"];
+    NSPredicate *sn_predicate=[NSPredicate predicateWithFormat:@"SELF MATCHES %@",prefixSN];
+    if (nil == sn || ![sn_predicate evaluateWithObject:sn]) {
+        [_promptTextField setStringValue:[NSString stringWithFormat:@"<WARNING> Wrong Serial Number!"]];
+        [_promptTextField setTextColor:[NSColor redColor]];
+        return ;
+    }
 #ifdef DEBUG
     
     [_selectedSlotView setSlotState:@"PAIRED"];
     
 # else
     
-    NSString *sn=slotView.serialNumber;
     NSString *mac=slotView.carrierID;
+
     NSArray *args=@[[NSString stringWithFormat:@"%@:%@/api/units/%@",_wabisabi_ip,_wabisabi_port,sn],@"-X",@"PUT"];
     
     NSString *retStr=[self sendJsonData:args];
@@ -854,9 +865,7 @@ static void callPythonScript(const char * script,const char * func_name)
 
 -(void)unPairSlotView:(SFSlotView *)slotView;
 {
-#ifdef DEBUG
-    [_selectedSlotView setSlotState:@"EMPTY"];
-#else
+    //没有选择slot
     if (_selectedSlotView == nil)
     {
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -865,6 +874,20 @@ static void callPythonScript(const char * script,const char * func_name)
         });
         return;
     }
+    //slot状态不符合？
+    NSArray *validState=@[@"PAIRED",@"FAILED",@"PASSED",@"ABORTED"];
+    NSString *rawState = slotView.slotState;
+    if (nil == rawState || ![validState containsObject:rawState]) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [_promptTextField setStringValue:[NSString stringWithFormat:@"<WARNING> Forbidden unpair <%@>, Unpair slot failed!",rawState]];
+            [_promptTextField setTextColor:[NSColor redColor]];
+        });
+        return;
+    }
+#ifdef DEBUG
+    [_selectedSlotView setSlotState:@"EMPTY"];
+#else
+
     
     [self postUUT];
     // NSString *ethAddress=[thisSlotInfo objectForKey:@"MAC_Slot"];

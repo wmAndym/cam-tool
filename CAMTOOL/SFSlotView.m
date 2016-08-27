@@ -189,6 +189,14 @@
 
         default:break;
     }
+    
+    //防止出现有时测试结果也会刷新成白色，不是PASS或FAIL的绿红色
+    if ([_slotState isEqualToString:@"PASSED"]) {
+        _textCellBackgroundColor = [NSColor greenColor];
+    }else if ([_slotState isEqualToString:@"FAILED"]){
+        _textCellBackgroundColor = [NSColor redColor];
+    }
+    
     //if slot is disabled,
     if (self.enable == NO) {
         _serialNumber = @"DISABLED";

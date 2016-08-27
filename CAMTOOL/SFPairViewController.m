@@ -159,6 +159,7 @@
      [super destroyController];
     
     [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [_updateTextInputTimer invalidate];
     
 }
 
@@ -356,7 +357,16 @@
         [[self.view window] makeFirstResponder:_inputArea];
         
     });
+    _updateTextInputTimer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(updateUI) userInfo:nil repeats:YES];
+    
 
-   // [_pairImageView addSubview:[NSImage image]]
+}
+-(void)updateUI{
+    NSLog(@"update..");
+    dispatch_async(dispatch_get_main_queue(), ^{
+        
+        [[self.view window] makeFirstResponder:_inputArea];
+    });
+    
 }
 @end

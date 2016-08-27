@@ -37,11 +37,9 @@ typedef enum _ResultViewStatus:int {
 @interface SFSlotView : NSView
 {
     NSImageView *_qrView;
-    NSString *_slotState;
-    
 
 }
-
+@property(copy,nonatomic) NSString *slotState; //raw status.
 @property(assign,nonatomic)ResultViewStatus status;
 @property(copy)NSString *serialNumber;
 @property(copy)NSString *carrierID;
@@ -56,5 +54,5 @@ typedef enum _ResultViewStatus:int {
 @property(assign)NSTimeInterval startedTimeStamp;
 
 -(void)setClearStatus;
--(void)setSlotState:(NSString *)state;
+//-(void)setSlotState:(NSString *)state;
 @end

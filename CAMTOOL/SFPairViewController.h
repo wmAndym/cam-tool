@@ -11,6 +11,7 @@
 
 @interface SFPairViewController : SFViewController{
      NSTextField *_inputArea;
+    NSTimer *_updateTextInputTimer;
 }
 @property (weak) IBOutlet NSTextField *slotNumberField;
 @property (weak) IBOutlet NSTextField *carrierIDField;
