@@ -10,8 +10,8 @@
 #import "SFCommonFounction.h"
 #import "SFRecordWriter.h"
 
- NSString *g_wabisabi_ip = nil;
- NSString *g_wabisabi_port =nil;
+NSString *g_wabisabi_ip = nil;
+NSString *g_wabisabi_port =nil;
 
 @implementation SFSlotCommunication
 
@@ -55,7 +55,7 @@
     output = [SFCommonFounction executeCmd:cmd withArguments:args];
     
     [[SFRecordWriter sharedLogWriter] insertLog:output Type:SFLogTypeNormal];
-
+    
     NSLog(@"%@ %@ %@",cmd,args,output);
     return  output;
     
@@ -92,13 +92,15 @@
     
     //call unpair.command shell.
     NSString *unpairCommandPath=[[NSBundle mainBundle] pathForResource:@"unpair" ofType:@"command" inDirectory:@"actionscripts"];
-    
+    NSString *output = [SFSlotCommunication sendJsonData:args];
+    [NSThread sleepForTimeInterval:0.5];
     [SFCommonFounction executeCmd:@"/bin/sh" withArguments:@[unpairCommandPath,carrierID,slot,camAddress]];
+    return output;
     
-    return [SFSlotCommunication sendJsonData:args];
 #endif
-
-
+    
+    
+    
     
 }
 
@@ -110,7 +112,7 @@
 +(NSString *)pairSlot:(NSString *)slot  carrierID:(NSString *)carrierID CAMAddress:(NSString *)camAddress{
     
 #ifdef DEBUG
-
+    
     __block BOOL changed=NO;
     [[[SFSlotCommunication sharedSlotCommunication] debug_slot_settings] enumerateObjectsUsingBlock:^(id  obj, NSUInteger idx, BOOL *  stop) {
         if (obj && [[obj objectForKey:@"slot"] isEqualToString:slot]) {
@@ -118,7 +120,7 @@
             [obj setObject:@"cam" forKey:camAddress];
             changed=YES;
             *stop = YES;
-
+            
         }
     }];
     
@@ -132,14 +134,14 @@
     NSString *pairCommandPath=[[NSBundle mainBundle] pathForResource:@"pair" ofType:@"command" inDirectory:@"actionscripts"];
     
     [SFCommonFounction executeCmd:@"/bin/sh" withArguments:@[pairCommandPath,carrierID,slot,camAddress]];
-
+    
     
     
     return @"OK";
 #else
     
     [[SFRecordWriter sharedLogWriter] insertLog:[NSString stringWithFormat:@"pairSlot:%@  carrierID:%@ CAMAddress:%@",slot,carrierID,camAddress] Type:SFLogTypeNormal];
-
+    
     NSArray *args=@[[NSString stringWithFormat:@"%@:%@/api/carriers/%@",g_wabisabi_ip,g_wabisabi_port,carrierID],@"-X",@"PUT"];
     [self sendJsonData:args];
     
@@ -150,16 +152,16 @@
     args=@[[NSString stringWithFormat:@"%@:%@/api/carriers/%@",g_wabisabi_ip,g_wabisabi_port,carrierID],@"-X",@"PATCH",@"-d",[NSString stringWithFormat:@"{\"serialPort\":\"%@\"}",camAddress],@"-H",@"Content-Type: application/json"];
     
     //call pair.command shell.
+    
     NSString *pairCommandPath=[[NSBundle mainBundle] pathForResource:@"pair" ofType:@"command" inDirectory:@"actionscripts"];
-    
+    NSString *output = [self sendJsonData:args];
+    [NSThread sleepForTimeInterval:0.5];
     [SFCommonFounction executeCmd:@"/bin/sh" withArguments:@[pairCommandPath,carrierID,slot,camAddress]];
-
+    return output;
     
-    
-    return [self sendJsonData:args];
 #endif
     
-
+    
     
     
     
@@ -167,32 +169,32 @@
 
 +(BOOL)checkIsCarrierPaired:(NSString *)mac information:(NSMutableDictionary *) info;
 {
-
+    
 #ifdef DEBUG
-        __block BOOL isPaired= NO;
-        [[[SFSlotCommunication sharedSlotCommunication] debug_slot_settings] enumerateObjectsUsingBlock:^(id   obj, NSUInteger idx, BOOL *  stop) {
-            if (obj && [[obj valueForKey:@"carrier"] isEqualToString:mac]) {
-                isPaired = YES;
-                *stop = YES;
-                NSDictionary *slot=@{@"sioSlot":[obj objectForKey:@"slot"]};
-                [info setObject:slot forKey:@"slot"];
-            }
-        }];
-        return isPaired;
-#else
-        NSArray *args=@[[NSString stringWithFormat:@"%@:%@/api/carriers/%@",g_wabisabi_ip,g_wabisabi_port,mac]];
-        NSString *output = [SFSlotCommunication sendJsonData:args];
-        
-        NSDictionary *retInfo =[NSJSONSerialization
-                                JSONObjectWithData:[output dataUsingEncoding:NSUTF8StringEncoding]
-                                options:NSJSONReadingMutableLeaves error:nil];
-        
-        [info setDictionary:retInfo];
-        
-        if ([[retInfo valueForKeyPath:@"state"] isEqualToString:@"PAIRED"] || [retInfo valueForKeyPath:@"slot.id"]) {
-            return  YES;
+    __block BOOL isPaired= NO;
+    [[[SFSlotCommunication sharedSlotCommunication] debug_slot_settings] enumerateObjectsUsingBlock:^(id   obj, NSUInteger idx, BOOL *  stop) {
+        if (obj && [[obj valueForKey:@"carrier"] isEqualToString:mac]) {
+            isPaired = YES;
+            *stop = YES;
+            NSDictionary *slot=@{@"sioSlot":[obj objectForKey:@"slot"]};
+            [info setObject:slot forKey:@"slot"];
         }
-        return NO;
+    }];
+    return isPaired;
+#else
+    NSArray *args=@[[NSString stringWithFormat:@"%@:%@/api/carriers/%@",g_wabisabi_ip,g_wabisabi_port,mac]];
+    NSString *output = [SFSlotCommunication sendJsonData:args];
+    
+    NSDictionary *retInfo =[NSJSONSerialization
+                            JSONObjectWithData:[output dataUsingEncoding:NSUTF8StringEncoding]
+                            options:NSJSONReadingMutableLeaves error:nil];
+    
+    [info setDictionary:retInfo];
+    
+    if ([[retInfo valueForKeyPath:@"state"] isEqualToString:@"PAIRED"] || [retInfo valueForKeyPath:@"slot.id"]) {
+        return  YES;
+    }
+    return NO;
 #endif
 }
 +(BOOL)checkIsSlotPaired:(NSString *)slotID information:(NSMutableDictionary *) info{
@@ -207,7 +209,7 @@
         }
     }];
     return isPaired;
-
+    
 #else
     NSArray *args=@[[NSString stringWithFormat:@"%@:%@/api/slots/%@/carrier",g_wabisabi_ip,g_wabisabi_port,slotID]];
     NSString *output = [SFSlotCommunication sendJsonData:args];

@@ -142,7 +142,7 @@
 
 -(NSString *)formatedCycleTimeValue:(NSInteger)ct
 {
-    ct = ct >= 24*3600 ? 0 : ct; // cycle more than a day ,as invalid value ,should be set to zero.
+    ct = ct >= 5*24*3600 ? 0 : ct; // cycle more than a day ,as invalid value ,should be set to zero.
     UInt hour=0;
     UInt min=0;
     UInt second=0;

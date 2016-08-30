@@ -132,7 +132,11 @@
     
     //stroe slot view's start test time stamp
     NSArray *slotViews_startTimeStamp = [_slotViews valueForKeyPath:@"startedTimeStamp"];
+    NSArray *cycleTimes = [_slotViews valueForKeyPath:@"ct"];
+//    NSLog(@"%@",cycleTimes);
     [[NSUserDefaults standardUserDefaults] setObject:slotViews_startTimeStamp forKey:@"SlotStartTimeStamp"];
+    [[NSUserDefaults standardUserDefaults] setObject:cycleTimes forKey:@"SlotTestCycleTimes"];
+
     [[NSUserDefaults standardUserDefaults] synchronize];
         
     
@@ -259,6 +263,8 @@ static void callPythonScript(const char * script,const char * func_name)
     //setup slot views.
     NSArray *slotSettings=[[NSUserDefaults standardUserDefaults] valueForKeyPath:@"CAMSettings.Slots"];
     NSArray *allSlotsStartTimeStamp = [[NSUserDefaults standardUserDefaults] objectForKey:@"SlotStartTimeStamp"];
+    NSArray *allSlotsCycleTimes = [[NSUserDefaults standardUserDefaults] objectForKey:@"SlotTestCycleTimes"];
+
     for (int j=0; j<_maxSlotSize; j++) {
         SFSlotView *s =[SFSlotView new];
         id carrierid=[slotSettings[j] objectForKey:@"MAC_Slot"];
@@ -275,16 +281,20 @@ static void callPythonScript(const char * script,const char * func_name)
         
         if ([allSlotsStartTimeStamp count] > 5) { // 5 can be replaced by number 0-12;
             NSTimeInterval restoredTimeStamp = [allSlotsStartTimeStamp[j] floatValue];
+            NSUInteger cycleTime = [allSlotsCycleTimes[j] integerValue];
             if (restoredTimeStamp > 100) { //100 can be replaced by number which more than 1 and less than the real timestamp;
                 [s setStartedTimeStamp:restoredTimeStamp];
+                
             }
+            [s setCt:cycleTime];
         }
         
         [_slotViews addObject:s];
     }
     //delete defaults start timestamps.
     [[NSUserDefaults standardUserDefaults] setObject:[NSArray array] forKey:@"SlotStartTimeStamp"];
-    
+    [[NSUserDefaults standardUserDefaults] setObject:[NSArray array] forKey:@"SlotTestCycleTimes"];
+
     NSImage *pairImage= [QREncoder encode:@"<PAIR" size:1 correctionLevel:QRCorrectionLevelHigh];
     NSImage *unpairImage= [QREncoder encode:@"<UNPAIR" size:1 correctionLevel:QRCorrectionLevelHigh];
     NSImage *clearImage= [QREncoder encode:@"<CLEAR" size:1 correctionLevel:QRCorrectionLevelHigh];
@@ -331,7 +341,8 @@ static void callPythonScript(const char * script,const char * func_name)
                     [slotView setSlotState:@"TESTING"];
                     slotView.startedTimeStamp = [[NSDate date] timeIntervalSince1970];
 
-                }else if (slotView.status == ResultViewPendingStatus && slotView.startedTimeStamp > 0 && ([[NSDate new] timeIntervalSince1970] - slotView.startedTimeStamp) >=5){
+                }else if (slotView.status == ResultViewPendingStatus && slotView.startedTimeStamp > 0 && ([[NSDate new] timeIntervalSince1970] - slotView.startedTimeStamp) >=55){
+
                     
                     NSTimeInterval interval =[[NSDate new] timeIntervalSince1970] ;
                     if((long)interval % 2){
@@ -340,6 +351,10 @@ static void callPythonScript(const char * script,const char * func_name)
                         [slotView setSlotState:@"FAILED"];
                         
                     }
+                }else{
+                    NSTimeInterval endT = [[NSDate date] timeIntervalSince1970];
+                    NSTimeInterval dt = endT - slotView.startedTimeStamp;
+                    [slotView setCt:dt];
                 }
                 
             }
